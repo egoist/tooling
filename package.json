@@ -66,12 +66,18 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^1.1.5",
     "semantic-release": "^4.3.5"
   },
   "tooling": {
     "index": {
       "title": "tooling index",
       "template": "example/index.template"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
