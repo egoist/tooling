@@ -8,7 +8,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = function (options) {
 	// settings for generated index.html
-	const index = options.index
+	const localConfig = require(process.cwd() + '/package.json').tooling || {}
+	const index = localConfig.index ? localConfig.index : {}
 	delete options.index
 	const config = loadConfig(options)
 	config.output.filename = 'bundle.[hash].js'

@@ -1,6 +1,6 @@
 {
   "name": "tooling",
-  "version": "0.0.2",
+  "version": "0.0.21",
   "description": "One tooling, No setup.",
   "license": "MIT",
   "repository": {
@@ -63,5 +63,11 @@
   },
   "devDependencies": {
     "semantic-release": "^4.3.5"
+  },
+  "tooling": {
+    "index": {
+      "title": "tooling index",
+      "template": "example/index.template"
+    }
   }
 }

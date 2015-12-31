@@ -18,6 +18,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Autoprefixer
 - Hot reloading
 - BrowserSync
+- Custom HTML template
 - Build or Watch
 - Long-term caching
 
@@ -51,6 +52,20 @@ Options:
 |--port|devServer port, available in watch mode|
 |--browsersync|Enable browserSync at port 23789|
 |--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
+
+**Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 
+
+```
+{
+	"name": "My tooling app",
+	"tooling": {
+	    "index": {
+	      "title": "tooling index",
+	      "template": "src/index.template"
+	    }
+	  }
+}
+```
 
 ## API
 
