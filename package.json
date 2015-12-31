@@ -1,6 +1,6 @@
 {
   "name": "tooling",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-semanticly-released",
   "description": "One tooling, No setup.",
   "license": "MIT",
   "repository": {
@@ -66,11 +66,7 @@
     "webpack-hot-middleware": "^2.6.0"
   },
   "devDependencies": {
-    "condition-circle": "^1.2.0",
     "semantic-release": "^4.3.5"
-  },
-  "release": {
-    "verifyConditions": "condition-circle"
   },
   "tooling": {
     "index": {

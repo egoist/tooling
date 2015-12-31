@@ -64,7 +64,7 @@ Options:
 	      "title": "tooling index",
 	      "template": "src/index.template"
 	    }
-	  }
+	}
 }
 ```
 
