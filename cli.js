@@ -7,7 +7,7 @@ const pkg = require('./package')
 const watch = require('./commands/watch')
 const build = require('./commands/build')
 
-updateNotifier({pkg})
+updateNotifier({pkg}).notify()
 
 program
 	.version(pkg.version)
