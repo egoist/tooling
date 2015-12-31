@@ -2,7 +2,7 @@
 
 [![version](https://img.shields.io/npm/v/tooling.svg)](https://www.npmjs.com/package/tooling)
 [![npm](https://img.shields.io/npm/dm/tooling.svg)](https://www.npmjs.com/package/tooling)
-[![Join the chat at https://gitter.im/egoist/tooling](https://badges.gitter.im/egoist/tooling.svg)](https://gitter.im/egoist/vuepack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/egoist/tooling](https://badges.gitter.im/egoist/tooling.svg)](https://gitter.im/egoist/tooling?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
 
 ## Technologies
