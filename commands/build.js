@@ -2,35 +2,10 @@
 
 const path = require('path')
 const webpack = require('webpack')
-const assign = require('deep-assign')
 const loadConfig = require('../lib/loadConfig')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = function (options) {
-	// settings for generated index.html
-	const localConfig = require(process.cwd() + '/package.json').tooling || {}
-	const index = localConfig.index ? localConfig.index : {}
-	delete options.index
-	const config = loadConfig(options)
-	config.output.filename = 'bundle.[hash].js'
-	config.output.publicPath = './'
-	config.plugins = [
-	  new webpack.optimize.OccurenceOrderPlugin(),
-	  new webpack.DefinePlugin({
-	    '__DEV__': false,
-	    'process.env': {
-	      'NODE_ENV': JSON.stringify('production')
-	    }
-	  }),
-	  new webpack.optimize.UglifyJsPlugin({
-	    compressor: {
-	      warnings: false
-	    }
-	  }),
-	  new HtmlWebpackPlugin(assign({}, {
-	    title: 'Tooling',
-	  }, index))
-	]
+	const config = loadConfig('build', options)
 	webpack(config, (err, stats) => {
 		if (err) {
 			return console.log(err)

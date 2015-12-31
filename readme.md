@@ -67,6 +67,8 @@ Options:
 }
 ```
 
+For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
+
 ## API
 
 ```bash
