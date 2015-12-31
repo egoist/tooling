@@ -11,12 +11,13 @@ What `tooling` supports (which means you don't have to install these dependencie
 
 - Webpack
 - Babel 6 + Stage-0 + Runtime
-- JSX
+- React with JSX
 - Vue
 - Vue-loader
 - PostCSS with PreCSS
 - Autoprefixer
 - Hot reloading
+- BrowserSync
 - Build or Watch
 - Long-term caching
 
@@ -42,6 +43,15 @@ Run dev server with hot reloading:
 tooling watch --entry [entry]
 ```
 
+Options:
+
+|Argument|Description|
+|---|---|
+|--entry|Set webpack entry, currently single entry only|
+|--port|devServer port, available in watch mode|
+|--browsersync|Enable browserSync at port 23789|
+|--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
+
 ## API
 
 ```bash
@@ -56,7 +66,9 @@ import tooling from 'tooling'
  *
  * @param {string} type - 'watch' or 'build'
  * @param {object} options - options for webpack, 
- * 						   - override the default settings.
+ * 					    - override the default settings.
+ *				 options.port - available in 'watch' mode
+ *							  - to set the port devServer should run at
  */
 tooling(type, options)
 ```
