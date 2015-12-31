@@ -1,0 +1,8 @@
+machine:
+  node:
+    version: "4"
+test:
+  override:
+    - npm test
+  post:
+    - DEBUG=condition npm run semantic-release || true

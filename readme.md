@@ -4,6 +4,7 @@
 [![npm](https://img.shields.io/npm/dm/tooling.svg)](https://www.npmjs.com/package/tooling)
 [![Join the chat at https://gitter.im/egoist/tooling](https://badges.gitter.im/egoist/tooling.svg)](https://gitter.im/egoist/tooling?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## Technologies
 
