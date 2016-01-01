@@ -1,5 +1,8 @@
 html {
 	body {
 		margin: 30px;
+		opacity: .4;
+		font-size: responsive;
+		display: flex;
 	}
 }
