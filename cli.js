@@ -14,15 +14,15 @@ program
 
 program
 	.command('watch')
-	.option('--entry [webpackEntry]', 'Set webpack entry')
-	.option('--port [serverPort]', 'Change port of server')
-	.option('--browsersync', 'Toggle browserSync')
-	.option('--silent', 'Do not open browser window')
+	.option('-e, --entry [webpackEntry]', 'Set webpack entry')
+	.option('-p, --port [serverPort]', 'Change port of server')
+	.option('-bs, --browsersync', 'Toggle browserSync')
+	.option('-s, --silent', 'Do not open browser window')
 	.action(watch)
 
 program
 	.command('build')
-	.option('--entry [webpackEntry]', 'Set webpack entry"')
+	.option('-e, --entry [webpackEntry]', 'Set webpack entry"')
 	.action(build)
 
 program.parse(process.argv)

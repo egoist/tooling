@@ -51,10 +51,10 @@ Options:
 
 |Argument|Description|
 |---|---|
-|--entry|Set webpack entry, currently single entry only|
-|--port|devServer port, available in watch mode|
-|--browsersync|Enable browserSync at port 23789|
-|--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
+|-e/--entry|Set webpack entry, currently single entry only|
+|-p/--port|devServer port, available in watch mode|
+|-bs/--browsersync|Enable browserSync at port 23789|
+|-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 
 
