@@ -23,6 +23,8 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Build or Watch
 - Long-term caching
 
+[Try It Out](/try-it-out.md) 👉
+
 ## Usage
 
 Installing `tooling` via NPM is easy (`node` >= 4.0.0):
