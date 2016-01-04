@@ -16,7 +16,7 @@ program
 	.command('watch')
 	.option('-e, --entry [webpackEntry]', 'Set webpack entry')
 	.option('-p, --port [serverPort]', 'Change port of server')
-	.option('-bs, --browsersync', 'Toggle browserSync')
+	.option('--bs, --browsersync', 'Toggle browserSync')
 	.option('-s, --silent', 'Do not open browser window')
 	.action(watch)
 
