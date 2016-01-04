@@ -14,7 +14,7 @@ npm install -g tooling
 ```bash
 mkdir react-demo && cd react-demo
 subl index.js
-# grad the following code into this file or just write yourself.
+# grab the following code into this file or just write yourself.
 ```
 
 ```javascript
