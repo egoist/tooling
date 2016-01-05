@@ -8,9 +8,12 @@ const open = require('open')
 
 module.exports = function(options) {
 	const config = loadConfig('watch', options)
-	server(config, port => {
-		if (!options.silent) {
-			open(`http://localhost:${port}`)
-		}
-	})
+	const port = config.port
+	delete config.port
+	server(port, config)
+		.then(port => {
+			if (!options.silent) {
+				open(`http://localhost:${port}`)
+			}
+		})
 }

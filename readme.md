@@ -74,6 +74,8 @@ For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
 
 ## API
 
+**WIP.**
+
 ```bash
 npm install tooling --save
 ```

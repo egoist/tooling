@@ -47,8 +47,6 @@
     "browser-sync-webpack-plugin": "^1.0.1",
     "commander": "^2.9.0",
     "css-loader": "^0.23.1",
-    "cssgrace": "^3.0.0",
-    "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^1.7.0",
@@ -67,8 +65,7 @@
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.5.0",
     "webpack": "^1.12.9",
-    "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-server": "^0.1.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
