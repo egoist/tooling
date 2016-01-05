@@ -1,5 +1,9 @@
 # Try It Out
 
+## Use `tooling` to prototype a Vue demo
+
+[Watch Video(no sound) on Youtube!](https://www.youtube.com/watch?v=_odq2Sc1Sko)
+
 ## Use `tooling` to prototype a React demo
 
 ### Install `tooling`
