@@ -65,7 +65,7 @@
     "vue-html-loader": "^1.0.0",
     "vue-loader": "^7.5.0",
     "webpack": "^1.12.9",
-    "webpack-hot-server": "^0.1.0"
+    "webpack-hot-server": "^0.1.1"
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
