@@ -23,7 +23,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Build or Watch
 - Long-term caching
 
-[Try It Out](/try-it-out.md) 👉
+Real world example, run `npm start` in [this repo](https://github.com/egoist/how-often) or [try it out](/try-it-out.md) 👉
 
 ## Usage
 
