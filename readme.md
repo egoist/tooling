@@ -27,7 +27,7 @@ Real world example, run `npm start` in [this repo](https://github.com/egoist/how
 
 ## Usage
 
-Installing `tooling` via NPM is easy (`node` >= 4.0.0):
+Installing `tooling` via NPM is easy (at lease node 4, recommend `node` >= 5):
 
 ```bash
 npm install tooling -g
