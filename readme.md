@@ -55,6 +55,7 @@ Options:
 |-p/--port|devServer port, available in watch mode|
 |--bs/--browsersync|Enable browserSync at port 23789|
 |-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
+|-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 

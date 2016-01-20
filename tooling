@@ -18,11 +18,13 @@ program
 	.option('-p, --port [serverPort]', 'Change port of server')
 	.option('--bs, --browsersync', 'Toggle browserSync')
 	.option('-s, --silent', 'Do not open browser window')
+	.option('-u, --use [usePresetsFor]', 'Use presets for React or Vue')
 	.action(watch)
 
 program
 	.command('build')
 	.option('-e, --entry [webpackEntry]', 'Set webpack entry"')
+	.option('-u, --use [usePresetsFor]', 'Use presets for React or Vue')
 	.action(build)
 
 program.parse(process.argv)

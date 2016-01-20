@@ -12,7 +12,7 @@
     "email": "0x142857@gmail.com",
     "url": "github.com/egoist"
   },
-  "bin": "cli.js",
+  "bin": "tooling",
   "main": "index.js",
   "engines": {
     "node": ">=4.0.0"

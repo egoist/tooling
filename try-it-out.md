@@ -47,7 +47,7 @@ render(<Counter/>, document.querySelector('app'))
 
 ### Make it happen
 
-You're all set! Run `tooling watch --entry index` to start prototyping.
+You're all set! Run `tooling watch --entry index --use react` to start prototyping.
 
 Remember what, `hot reloading` is enabled!
 
