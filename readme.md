@@ -1,4 +1,4 @@
-# tooling 
+# tooling
 
 [![version](https://img.shields.io/npm/v/tooling.svg)](https://www.npmjs.com/package/tooling)
 [![npm](https://img.shields.io/npm/dm/tooling.svg)](https://www.npmjs.com/package/tooling)
@@ -27,7 +27,7 @@ Real world example, run `npm start` in [this repo](https://github.com/egoist/how
 
 ## Usage
 
-Installing `tooling` via NPM is easy (at lease node 4, recommend `node` >= 5):
+Installing `tooling` via NPM is easy (at least node 4, recommend `node` >= 5):
 
 ```bash
 npm install tooling -g
@@ -56,7 +56,7 @@ Options:
 |--bs/--browsersync|Enable browserSync at port 23789|
 |-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
 
-**Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 
+**Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
 ```
 {
@@ -87,7 +87,7 @@ import tooling from 'tooling'
  * Tooling
  *
  * @param {string} type - 'watch' or 'build'
- * @param {object} options - options for webpack, 
+ * @param {object} options - options for webpack,
  * 					    - override the default settings.
  *				 options.port - available in 'watch' mode
  *							  - to set the port devServer should run at
