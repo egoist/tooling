@@ -18,7 +18,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "echo \"lol\"",
+    "test": "xo",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
@@ -71,7 +71,8 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "^1.1.5",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "xo": "^0.12.1"
   },
   "tooling": {
     "index": {
@@ -83,5 +84,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "xo": {
+    "semicolon": false,
+    "ignores": ["example/**", "build/**"]
   }
 }

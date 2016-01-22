@@ -1,6 +1,5 @@
 'use strict'
 
-const path = require('path')
 const webpack = require('webpack')
 const loadConfig = require('../lib/loadConfig')
 const ProgressPlugin = require('../lib/ProgressPlugin')

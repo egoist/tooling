@@ -9,8 +9,7 @@ const build = require('./commands/build')
 
 updateNotifier({pkg}).notify()
 
-program
-	.version(pkg.version)
+program.version(pkg.version)
 
 program
 	.command('watch')
