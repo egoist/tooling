@@ -23,7 +23,7 @@
   },
   "files": [
     "index.js",
-    "cli.js",
+    "tooling",
     "commands",
     "lib"
   ],
