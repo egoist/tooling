@@ -18,7 +18,7 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "xo",
+    "test": "xo && ./tooling build -e example --use react",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
