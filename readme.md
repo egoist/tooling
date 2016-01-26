@@ -38,6 +38,7 @@ Build a project in production mode:
 
 ```bash
 # default entry is ./src/index
+# in this case we use Vue in our app
 tooling build --entry [entry]
 ```
 
@@ -45,7 +46,8 @@ Run dev server with hot reloading:
 
 ```bash
 # default entry is ./src/index
-tooling watch --entry [entry]
+# in this case we use React in our app
+tooling watch --entry [entry] --use react
 ```
 
 Options:

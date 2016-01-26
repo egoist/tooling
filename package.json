@@ -87,6 +87,9 @@
   },
   "xo": {
     "semicolon": false,
-    "ignores": ["example/**", "build/**"]
+    "ignores": [
+      "example/**",
+      "build/**"
+    ]
   }
 }
