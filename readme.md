@@ -59,6 +59,7 @@ Options:
 |--bs/--browsersync|Enable browserSync at port 23789|
 |-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
+|--ai/--auto-install|Automatically install missing dependencies when editing|
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
