@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import './fixture'
 
 class Counter extends Component {
-    constructor () {
+    constructor() {
         super()
         this.state = {
             count: 0
         }
     }
-    handleClick () {
+    handleClick() {
         this.setState({
-            count: this.state.count + 1
+            count: this.state.count + 2
         })
     }
-    render () {
-        return <div onClick={this.handleClick.bind(this)}>{this.state.count}2</div>
+    render() {
+        return <button onClick={this.handleClick.bind(this)}>{this.state.count}</button>
     }
 }
 
