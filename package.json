@@ -15,7 +15,7 @@
   "bin": "./tooling",
   "main": "index.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=5.0.0"
   },
   "scripts": {
     "test": "xo && ./tooling build -e example --use react",
