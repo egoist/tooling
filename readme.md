@@ -40,6 +40,11 @@ Build a project in production mode:
 # default entry is ./src/index
 # in this case we use Vue in our app
 tooling build --entry [entry]
+
+# multi entry support
+--entry example # => example[.ext] or example/index[.ext]
+--entry app.js,app.css # => ['app.js', 'app.css']
+--entry js:app.js,css:app.css # => {js: 'app.js', css: 'app.css'}
 ```
 
 Run dev server with hot reloading:
