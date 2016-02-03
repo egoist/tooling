@@ -1,11 +1,18 @@
-# tooling
+<p align="center">
+	<img src="example/tooling-logo.png" height="100"/>
+</p>
 
-[![version](https://img.shields.io/npm/v/tooling.svg)](https://www.npmjs.com/package/tooling)
-[![npm](https://img.shields.io/npm/dm/tooling.svg)](https://www.npmjs.com/package/tooling)
-[![Travis branch](https://img.shields.io/travis/egoist/tooling/master.svg)](https://travis-ci.org/egoist/tooling)
-[![Join the chat at https://gitter.im/egoist/tooling](https://badges.gitter.im/egoist/tooling.svg)](https://gitter.im/egoist/tooling?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+<p align="center">
+	<a href="https://www.npmjs.com/package/tooling"><img src="https://img.shields.io/npm/v/tooling.svg" alt="version" style="max-width:100%;"></a>
+	<a href="https://www.npmjs.com/package/tooling"><img src="https://img.shields.io/npm/dm/tooling.svg" alt="npm" style="max-width:100%;"></a>
+	<a href="https://travis-ci.org/egoist/tooling"><img src="https://img.shields.io/travis/egoist/tooling/master.svg" alt="Travis branch" style="max-width:100%;"></a>
+</p>
+
+<p align="center">
+	<a href="https://gitter.im/egoist/tooling?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/egoist/tooling.svg" alt="Join the chat at https://gitter.im/egoist/tooling" style="max-width:100%;"></a>
+	<a href="" target="_blank"><img src="https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg" alt="extra" style="max-width:100%;"></a>
+	<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release" style="max-width:100%;"></a>
+</p>
 
 ## Technologies
 

@@ -15,7 +15,12 @@ class Counter extends Component {
         })
     }
     render() {
-        return <button onClick={this.handleClick.bind(this)}>{this.state.count}</button>
+        return (
+					<div>
+						<div className="logo"></div>
+						<button onClick={this.handleClick.bind(this)}>{this.state.count}</button>
+					</div>
+				)
     }
 }
 

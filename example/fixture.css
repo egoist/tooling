@@ -8,4 +8,10 @@ html {
 	button {
 		padding: 100px;
 	}
+	.logo {
+		height: 60px;
+		width: 200px;
+		background-size: cover;
+		background-image: url(./tooling-logo.png);
+	}
 }
