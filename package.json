@@ -15,7 +15,7 @@
   "bin": "./tooling",
   "main": "index.js",
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=5.0.0"
   },
   "scripts": {
     "test": "xo && ./tooling build -e example --use react",
@@ -42,7 +42,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.0.1",
     "babel-preset-stage-0": "^6.3.13",
-    "babel-runtime": "^5.8.34",
+    "babel-runtime": "^5.8.35",
     "browser-sync": "^2.10.1",
     "browser-sync-webpack-plugin": "^1.0.1",
     "commander": "^2.9.0",
@@ -52,6 +52,7 @@
     "html-webpack-plugin": "^1.7.0",
     "json-loader": "^0.5.4",
     "npm-install-webpack-plugin": "^2.0.0",
+    "object-string": "0.0.1",
     "open": "0.0.5",
     "path-exists": "^2.1.0",
     "postcss-loader": "^0.8.0",

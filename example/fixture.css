@@ -5,4 +5,7 @@ html {
 		font-size: responsive;
 		display: flex;
 	}
+	button {
+		padding: 100px;
+	}
 }

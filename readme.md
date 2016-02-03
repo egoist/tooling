@@ -28,7 +28,7 @@ Real world example, run `npm start` in [this repo](https://github.com/egoist/how
 
 ## Usage
 
-Installing `tooling` via NPM is easy (at least node 4, recommend `node` >= 5):
+Installing `tooling` via NPM is easy (**WARN: only support node >=5**):
 
 ```bash
 npm install tooling -g
@@ -56,10 +56,10 @@ Options:
 |---|---|
 |-e/--entry|Set webpack entry, currently single entry only|
 |-p/--port|devServer port, available in watch mode|
-|--bs/--browsersync|Enable browserSync at port 23789|
+|--bs/--browser-sync|Enable browserSync at port 23789 or a custom port|
 |-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
-|--ai/--auto-install|Automatically install missing dependencies when editing|
+|--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
