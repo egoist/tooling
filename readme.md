@@ -66,10 +66,10 @@ Options:
 
 |Argument|Description|
 |---|---|
-|-e/--entry|Set webpack entry, currently single entry only|
+|-e/--entry|Set webpack entry, support multi entries|
 |-p/--port|devServer port, available in watch mode|
 |--bs/--browser-sync|Enable browserSync at port 23789 or a custom port|
-|-s/--silent|Do not open browser window when running devServer (not work if you enable browserSync)|
+|-s/--silent|Do not open browser window when running devServer|
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
 |--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
 
