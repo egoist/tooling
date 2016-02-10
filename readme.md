@@ -72,6 +72,7 @@ Options:
 |-s/--silent|Do not open browser window when running devServer|
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
 |--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
+|--title|Set html title|
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
