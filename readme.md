@@ -73,6 +73,11 @@ Options:
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
 |--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
 |--title|Set html title|
+|--format|Set bundle format, available options are `cjs` `umd`, default is `iife`|
+|-t/--target|Set webpack target|
+|-d/--dest|Set bundled file dest directory, default is `./build`|
+
+Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usage.
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
@@ -82,7 +87,7 @@ Options:
 	"tooling": {
 	    "index": {
 	      "title": "tooling index",
-	      "template": "src/index.template"
+	      "template": "src/index.jade"
 	    }
 	}
 }
