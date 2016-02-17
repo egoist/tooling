@@ -73,7 +73,8 @@ Options:
 |-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
 |--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
 |--title|Set html title|
-|--format|Set bundle format, available options are `cjs` `umd`, default is `iife`|
+|--cjs|Use CommonJS format|
+|--umd|Use UMD format, the libraryName is required in this case|
 |-t/--target|Set webpack target|
 |-d/--dest|Set bundled file dest directory, default is `./build`|
 

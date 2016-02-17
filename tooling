@@ -21,8 +21,9 @@ program
 	.option('-u, --use [usePresetsFor]', 'Use presets for React or Vue or the default config')
 	.option('--ai, --auto-install', 'Automatically install missing dependencies when editing')
 	.option('--title [htmlTitle]', 'Set title for output html')
-	.option('--format [bundleFormat]', 'Set bundle format')
-	.option('--target [webpackTarget]', 'Set webpack target')
+	.option('--umd <libraryName>', 'UMD format')
+	.option('--cjs', 'CommonJS format')
+	.option('-t, --target [webpackTarget]', 'Set webpack target')
 	.action(watch)
 
 program
@@ -31,7 +32,8 @@ program
 	.option('-e, --entry [webpackEntry]', 'Set webpack entry"')
 	.option('-u, --use [usePresetsFor]', 'Use presets for React or Vue')
 	.option('--title [htmlTitle]', 'Set title for output html')
-	.option('--format [bundleFormat]', 'Set bundle format')
+	.option('--umd <libraryName>', 'UMD format')
+	.option('--cjs', 'CommonJS format')
 	.option('-t, --target [webpackTarget]', 'Set webpack target')
 	.option('-d, --dest [bundleDestDir]', 'Set bundled file dest directory')
 	.action(build)
