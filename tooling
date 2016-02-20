@@ -36,6 +36,8 @@ program
 	.option('--cjs', 'CommonJS format')
 	.option('-t, --target [webpackTarget]', 'Set webpack target')
 	.option('-d, --dest [bundleDestDir]', 'Set bundled file dest directory')
+	.option('--filename <bundleFileName>', 'Set bundled filename')
+	.option('--disable-html', 'Do not include html-webpack-plugin')
 	.action(build)
 
 program.parse(process.argv)

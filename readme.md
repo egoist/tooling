@@ -62,23 +62,7 @@ Run dev server with hot reloading:
 tooling watch --entry [entry] --use react
 ```
 
-Options:
-
-|Argument|Description|
-|---|---|
-|-e/--entry|Set webpack entry, support multi entries|
-|-p/--port|devServer port, available in watch mode|
-|--bs/--browser-sync|Enable browserSync at port 23789 or a custom port|
-|-s/--silent|Do not open browser window when running devServer|
-|-u/--use|Set the framework you use, eg: `react`, `vue`. `vue` by default|
-|--ai/--auto-install|(**Buggy**) Automatically install missing dependencies when editing|
-|--title|Set html title|
-|--cjs|Use CommonJS format|
-|--umd|Use UMD format, the libraryName is required in this case|
-|-t/--target|Set webpack target|
-|-d/--dest|Set bundled file dest directory, default is `./build`|
-
-Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usage.
+Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
