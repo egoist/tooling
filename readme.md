@@ -107,6 +107,10 @@ import tooling from 'tooling'
 tooling(type, options)
 ```
 
+## Related
+
+- (Chinese) [文章: tooling 让你从 jQuery 中解脱出来](https://egoistian.com/2016/01/19/tooling-free-you-from-jquery/)
+
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
