@@ -14,6 +14,8 @@
 	<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release" style="max-width:100%;"></a>
 </p>
 
+**NOTICE:** Tooling 1.0 is currently under heavily development on [next branch](https://github.com/egoist/tooling/tree/next), cli usage may change a lot when 1.0 lands.
+
 ## Purpose
 
 You always need to configure webpack for each of your projects, drop `webpack.config.dev.js` `webpack.config.prod.js` for development and production envs. Install tons of common modules like loaders and frameworks. Tooling is just an apporach to skip that verbose procedure.
