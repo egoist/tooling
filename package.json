@@ -15,11 +15,10 @@
   "bin": "./tooling",
   "main": "index.js",
   "engines": {
-    "node": ">=5.0.0"
+    "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "xo && cd example && npm install && ../tooling build",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "xo && cd example && npm install && ../tooling build"
   },
   "files": [
     "index.js",
@@ -81,8 +80,6 @@
     "webpack-hot-server": "^0.2.2"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^1.1.5",
-    "semantic-release": "^4.3.5",
     "xo": "^0.12.1"
   },
   "tooling": {
@@ -90,11 +87,6 @@
     "index": {
       "title": "tooling index",
       "template": "lib/index.jade"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
     }
   },
   "xo": {
