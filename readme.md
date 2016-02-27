@@ -24,7 +24,7 @@ You always need to configure webpack for each of your projects, drop `webpack.co
 What `tooling` supports (which means you don't have to install these dependencies yourself):
 
 - Webpack
-- Babel 6 + Stage-0 + Runtime
+- Babel 6 + Stage-0 + Runtime + Polyfill
 - React with JSX
 - Vue/Vue-loader
 - PostCSS/css-modules/cssnext

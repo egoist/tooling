@@ -1,6 +1,9 @@
+import 'babel-polyfill'
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './fixture'
+
+console.log('a'.repeat(2))
 
 class Counter extends Component {
     constructor() {

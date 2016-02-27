@@ -6,7 +6,7 @@ const open = require('open')
 
 module.exports = function (options) {
 	const config = loadConfig('watch', options)
-	server({port: options.port, config})
+	server({config, port: options.port, customIndex: true})
 		.then(port => {
 			if (!options.silent) {
 				open(`http://localhost:${port}`)
