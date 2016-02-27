@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="example/tooling-logo.png" height="100"/>
+	<img src="media/tooling-logo.png" height="100"/>
 </p>
 
 <p align="center">
