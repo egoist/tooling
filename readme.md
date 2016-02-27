@@ -25,15 +25,15 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Webpack
 - Babel 6 + Stage-0 + Runtime
 - React with JSX
-- Vue
-- Vue-loader
-- PostCSS with PreCSS
+- Vue/Vue-loader
+- PostCSS/css-modules/cssnext
 - Autoprefixer
 - Hot reloading
 - BrowserSync
 - Custom HTML template
 - Build or Watch
 - Long-term caching
+- Custom format, iife/umd/commonjs
 
 Real world example, run `npm start` in [this repo](https://github.com/egoist/how-often) or [try it out](/try-it-out.md) 👉
 
