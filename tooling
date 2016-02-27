@@ -6,6 +6,7 @@ const updateNotifier = require('update-notifier')
 const pkg = require('./package')
 const watch = require('./commands/watch')
 const build = require('./commands/build')
+const gh = require('./commands/gh')
 
 updateNotifier({pkg}).notify()
 
@@ -45,5 +46,10 @@ program
 	.option('--clean', 'Clean output path before bundle')
 	.option('--cssmodules', 'Use css-modules')
 	.action(build)
+
+program
+	.command('gh [dir]')
+	.description('deploy to gh-pages')
+	.action(gh)
 
 program.parse(process.argv)
