@@ -1,14 +1,18 @@
+:root {
+	--hey: #ccc;
+}
 html {
-	body {
+	& body {
 		margin: 320px;
 		opacity: .4;
 		font-size: responsive;
 		display: flex;
+		color: var(--hey);
 	}
-	button {
+	& button {
 		padding: 100px;
 	}
-	.logo {
+	& .logo {
 		height: 60px;
 		width: 200px;
 		background-size: cover;

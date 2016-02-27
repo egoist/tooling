@@ -24,6 +24,8 @@ program
 	.option('--umd <libraryName>', 'UMD format')
 	.option('--cjs', 'CommonJS format')
 	.option('-t, --target [webpackTarget]', 'Set webpack target')
+	.option('--cssnext', 'Use cssnext')
+	.option('--cssmodules', 'Use css-modules')
 	.action(watch)
 
 program
@@ -38,6 +40,10 @@ program
 	.option('-d, --dest [bundleDestDir]', 'Set bundled file dest directory')
 	.option('--filename <bundleFileName>', 'Set bundled filename')
 	.option('--disable-html', 'Do not include html-webpack-plugin')
+	.option('--cssnext', 'Use cssnext')
+	.option('--pretty', 'Do not compress bundled files')
+	.option('--clean', 'Clean output path before bundle')
+	.option('--cssmodules', 'Use css-modules')
 	.action(build)
 
 program.parse(process.argv)

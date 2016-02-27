@@ -48,6 +48,7 @@
     "browser-sync-webpack-plugin": "^1.0.1",
     "commander": "^2.9.0",
     "css-loader": "^0.23.1",
+    "deep-assign": "^2.0.0",
     "extract-text-webpack-plugin": "^0.9.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.8.1",
@@ -55,15 +56,16 @@
     "jade-loader": "^0.8.0",
     "json-loader": "^0.5.4",
     "npm-install-webpack-plugin": "^2.0.0",
-    "object-string": "0.0.1",
     "open": "0.0.5",
     "path-exists": "^2.1.0",
+    "postcss-cssnext": "^2.4.0",
     "postcss-loader": "^0.8.0",
     "precss": "^1.3.0",
     "raw-loader": "^0.5.1",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
     "rucksack-css": "^0.8.5",
+    "shelljs": "^0.6.0",
     "style-loader": "^0.13.0",
     "update-notifier": "^0.6.0",
     "url-loader": "^0.5.7",
@@ -98,6 +100,10 @@
     ]
   },
   "testen": {
-    "node": ["4.0.0", "4.2.4", "5.6.0"]
+    "node": [
+      "4.0.0",
+      "4.2.4",
+      "5.6.0"
+    ]
   }
 }

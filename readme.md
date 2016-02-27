@@ -14,8 +14,6 @@
 	<a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release" style="max-width:100%;"></a>
 </p>
 
-**NOTICE:** Tooling 1.0 is currently under heavily development on [next branch](https://github.com/egoist/tooling/tree/next), cli usage may change a lot when 1.0 lands.
-
 ## Purpose
 
 You always need to configure webpack for each of your projects, drop `webpack.config.dev.js` `webpack.config.prod.js` for development and production envs. Install tons of common modules like loaders and frameworks. Tooling is just an apporach to skip that verbose procedure.
@@ -55,9 +53,12 @@ Build a project in production mode:
 tooling build --entry [entry]
 
 # multi entry support
---entry example # => example[.ext] or example/index[.ext]
---entry app.js,app.css # => ['app.js', 'app.css']
---entry js:app.js,css:app.css # => {js: 'app.js', css: 'app.css'}
+# configure this is `package.json`
+{
+	"tooling": {
+		"entry": whatever...
+	}
+}
 ```
 
 Run dev server with hot reloading:
@@ -72,7 +73,7 @@ Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
-```
+```json
 {
 	"name": "My tooling app",
 	"tooling": {
@@ -83,6 +84,8 @@ Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.
 	}
 }
 ```
+
+If it's complex to configure via CLI arguments (like multi entry), feel free to set in `package.json`.
 
 For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
 
