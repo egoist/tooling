@@ -1,6 +1,6 @@
 {
   "name": "tooling",
-  "version": "0.0.0-semanticly-released",
+  "version": "0.15.0",
   "description": "One tooling, No setup.",
   "license": "MIT",
   "repository": {
@@ -18,7 +18,7 @@
     "node": ">=5.0.0"
   },
   "scripts": {
-    "test": "xo && ./tooling build -e example --use react",
+    "test": "xo && cd example && npm install && ../tooling build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [

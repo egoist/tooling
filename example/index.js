@@ -1,30 +1,14 @@
-import 'babel-polyfill'
-import React, { Component } from 'react'
-import { render } from 'react-dom'
-import './fixture'
+import Vue from 'vue'
+import Router from 'vue-router'
+import app from './app'
 
-console.log('a'.repeat(2))
+Vue.use(Router)
 
-class Counter extends Component {
-    constructor() {
-        super()
-        this.state = {
-            count: 0
-        }
-    }
-    handleClick() {
-        this.setState({
-            count: this.state.count + 2
-        })
-    }
-    render() {
-        return (
-					<div>
-						<div className="logo"></div>
-						<button onClick={this.handleClick.bind(this)}>{this.state.count}</button>
-					</div>
-				)
-    }
-}
+const router = new Router()
+router.map({
+	'/': {
+		component: require('./views/home')
+	}
+})
 
-render(<Counter/>, document.querySelector('app'))
+router.start(app, 'app')

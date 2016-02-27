@@ -1,0 +1,21 @@
+{
+  "name": "tooling-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vue-router": "^0.7.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "tooling": {
+    "entry": "index.js",
+    "index": {
+      "title": "Tooling"
+    }
+  }
+}
