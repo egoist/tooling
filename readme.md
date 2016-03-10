@@ -69,7 +69,7 @@ Run dev server with hot reloading:
 tooling watch --entry [entry] --use react
 ```
 
-Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.
+**Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.**
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 
@@ -88,29 +88,6 @@ Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.
 If it's complex to configure via CLI arguments (like multi entry), feel free to set in `package.json`.
 
 For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
-
-## API
-
-**WIP.**
-
-```bash
-npm install tooling --save
-```
-
-```javascript
-import tooling from 'tooling'
-
-/**
- * Tooling
- *
- * @param {string} type - 'watch' or 'build'
- * @param {object} options - options for webpack,
- * 					    - override the default settings.
- *				 options.port - available in 'watch' mode
- *							  - to set the port devServer should run at
- */
-tooling(type, options)
-```
 
 ## Related
 
