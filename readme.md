@@ -23,17 +23,17 @@ You always need to configure webpack for each of your projects, drop `webpack.co
 What `tooling` supports (which means you don't have to install these dependencies yourself):
 
 - Webpack
-- Babel 6 + Stage-0 + Runtime + Polyfill
+- [Babel 6 + Stage-0 + Runtime + Polyfill](https://github.com/egoist/tooling/wiki/Using-ES6-via-Babel)
 - React with JSX
 - Vue/Vue-loader
-- PostCSS/css-modules/cssnext
+- [PostCSS/css-modules/cssnext](https://github.com/egoist/tooling/wiki/Using-CSS-via-PostCSS)
 - Autoprefixer
 - Hot reloading
 - BrowserSync
 - Custom HTML template
 - Build or Watch
 - Long-term caching
-- Custom format, iife/umd/commonjs
+- [Custom format, iife/umd/commonjs](https://github.com/egoist/tooling/wiki/UMD-CommonJS)
 
 Real world example, run `npm start` in [this repo](https://github.com/egoist/how-often) or [try it out](/try-it-out.md) 👉
 
