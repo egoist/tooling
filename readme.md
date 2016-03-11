@@ -52,7 +52,7 @@ $ npm install tooling -g
 ```bash
 $ mkdir -p awesome-web-app/src
 $ cd awesome-web-app
-$ npm init # optionally if you have a package.json
+$ npm init # if you don't have a package.json
 $ tooling init react # tooling init [type], default is vue
 ```
 
