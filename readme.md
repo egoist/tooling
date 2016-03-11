@@ -37,39 +37,68 @@ What `tooling` supports (which means you don't have to install these dependencie
 
 Real world example, run `npm start` in [this repo](https://github.com/egoist/how-often) or [try it out](/try-it-out.md) 👉
 
-## Usage
+## Install
 
 Installing `tooling` via NPM is easy (**WARN: only work for Node.js >= 4 and NPM@3**):
 
 ```bash
-npm install tooling -g
+$ npm install tooling -g
 ```
 
-Build a project in production mode:
+## Workflow
+
+**Initial an awesome web app**
 
 ```bash
-# default entry is ./src/index
-# in this case we use Vue in our app
-tooling build --entry [entry]
+$ mkdir -p awesome-web-app/src
+$ cd awesome-web-app
+$ npm init # optionally if you have a package.json
+$ tooling init react # tooling init [type], default is vue
+```
 
-# multi entry support
-# configure this is `package.json`
-{
-	"tooling": {
-		"entry": whatever...
+**Start hacking**
+
+```bash
+$ editor src/index.jsx
+```
+
+```js
+import React, { Component } from 'react'
+import { render } from 'react-dom'
+
+class Counter extends Component {
+	constructor () {
+		super()
+		this.state = {
+			count: 0
+		}
+	}
+	handleClick () {
+		this.setState({
+			count: this.state.count + 1
+		})
+	}
+	render () {
+		return <div onClick={this.handleClick.bind(this)}>{this.state.count}</div>
 	}
 }
+
+render(<Counter/>, document.querySelector('app'))
 ```
 
-Run dev server with hot reloading:
+**You're all set, bring it up!**
 
 ```bash
-# default entry is ./src/index
-# in this case we use React in our app
-tooling watch --entry [entry] --use react
+$ npm run watch
 ```
 
-**Run `tooling -h` `tooling watch -h` `tooling build -h` to see more usages.**
+** deploy to `gh-pages`**
+
+```bash
+$ tooling gh
+```
+
+**Run `tooling -h` `tooling watch -h` `tooling build -h` to see more option usages.**
 
 **Set up custom index.html in `package.json`**. see usage at [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)
 

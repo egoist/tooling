@@ -7,6 +7,7 @@ const pkg = require('./package')
 const watch = require('./commands/watch')
 const build = require('./commands/build')
 const gh = require('./commands/gh')
+const init = require('./commands/init')
 
 updateNotifier({pkg}).notify()
 
@@ -46,6 +47,11 @@ program
 	.option('--clean', 'Clean output path before bundle')
 	.option('--cssmodules', 'Use css-modules')
 	.action(build)
+
+program
+	.command('init [type]')
+	.description('initial a tooling project')
+	.action(init)
 
 program
 	.command('gh [dir]')
