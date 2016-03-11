@@ -92,7 +92,7 @@ render(<Counter/>, document.querySelector('app'))
 $ npm run watch
 ```
 
-** deploy to `gh-pages`**
+**deploy to `gh-pages`**
 
 ```bash
 $ tooling gh
