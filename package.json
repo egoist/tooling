@@ -53,7 +53,6 @@
     "deep-assign": "^2.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
-    "gh-pages": "^0.10.0",
     "html-webpack-plugin": "^2.8.1",
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",

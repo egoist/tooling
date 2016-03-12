@@ -95,7 +95,8 @@ $ npm run watch
 **deploy to `gh-pages`**
 
 ```bash
-$ npm run deploy
+$ npm i -g gh-pages
+$ gh-pages -d build
 ```
 
 **Run `tooling -h` `tooling watch -h` `tooling build -h` to see more option usages.**
