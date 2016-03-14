@@ -34,6 +34,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Build or Watch
 - Long-term caching
 - [Custom format, iife/umd/commonjs](https://github.com/egoist/tooling/wiki/UMD-CommonJS)
+- [Extend the webpack config!](https://github.com/egoist/tooling#extend-default-config)
 
 Real world example, run `npm start` in [this repo](https://github.com/egoist/how-often) or [try it out](/try-it-out.md) 👉
 
