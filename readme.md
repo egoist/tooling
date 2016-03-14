@@ -124,7 +124,7 @@ Sometimes settings in `package.json` is not powerful enough, you can extend the 
 
 ```js
 /**
- * @param {Object} config - webpack config which merge cli options and settings in package.json
+ * @param {Object} config - webpack config which merged cli options and settings in package.json
  * @param {Object} options - cli arguments
  * @return {Object} config - new webpack config
  */
