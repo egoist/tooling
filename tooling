@@ -27,6 +27,7 @@ program
 	.option('-t, --target [webpackTarget]', 'Set webpack target')
 	.option('--cssnext', 'Use cssnext')
 	.option('--cssmodules', 'Use css-modules')
+	.option('-c, --config', 'Custom tooling config file')
 	.action(watch)
 
 program
@@ -45,6 +46,7 @@ program
 	.option('--pretty', 'Do not compress bundled files')
 	.option('--clean', 'Clean output path before bundle')
 	.option('--cssmodules', 'Use css-modules')
+	.option('-c, --config', 'Custom tooling config file')
 	.action(build)
 
 program
