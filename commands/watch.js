@@ -2,14 +2,14 @@
 
 const server = require('webpack-hot-server')
 const loadConfig = require('../lib/loadConfig')
-const open = require('open')
+const opn = require('opn')
 
 module.exports = function (options) {
 	const config = loadConfig('watch', options)
 	server({config, port: options.port, customIndex: true})
 		.then(port => {
 			if (!options.silent) {
-				open(`http://localhost:${port}`)
+				opn(`http://localhost:${port}`)
 			}
 		})
 		.catch(err => console.log(err))
