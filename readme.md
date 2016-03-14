@@ -117,6 +117,29 @@ $ gh-pages -d build
 
 If it's complex to configure via CLI arguments (like multi entry), feel free to set in `package.json`.
 
+## Extend default config
+
+Sometimes settings in `package.json` is not powerful enough, you can extend the webpack.config.js that Tooling uses to build your app by simply dropping `tooling.js` in your project directory:
+
+```js
+/**
+ * @param {Object} config - webpack config which merge cli options and settings in package.json
+ * @param {Object} options - cli arguments
+ * @return {Object} config - new webpack config
+ */
+export default function (config, options) {
+	config.entry = './some/else/entry.js'
+	config.postcss.push(require('new postcss plugins'))
+	return config
+
+	// or if you like object spreading...
+	return {
+		...config,
+		entry: 'something else'
+	}
+}
+```
+
 For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
 
 ## Related
