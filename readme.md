@@ -141,6 +141,10 @@ export default function (config, options) {
 }
 ```
 
+Protip: You can require a module here without installing it if it's Tooling's dependency, since we added a [require path](https://github.com/egoist/tooling/blob/master/lib%2FassignConfig.js#L13-L15). eg: require `webpack` to use its plugins.
+
+---
+
 For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
 
 ## Related
