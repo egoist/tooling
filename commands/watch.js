@@ -1,7 +1,7 @@
 'use strict'
+const opn = require('opn')
 const server = require('webpack-hot-server')
 const loadConfig = require('../lib/loadConfig')
-const opn = require('opn')
 
 module.exports = function watch(options) {
   const config = loadConfig('watch', options)
