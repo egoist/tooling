@@ -12,17 +12,17 @@
     "email": "0x142857@gmail.com",
     "url": "github.com/egoist"
   },
-  "bin": "./tooling",
+  "bin": "cli.js",
   "main": "index.js",
   "engines": {
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "xo && cd example && npm install && ../tooling build"
+    "test": "eslint **/*.js --quiet && cd example && npm install && ../cli.js build"
   },
   "files": [
     "index.js",
-    "tooling",
+    "cli.js",
     "commands",
     "lib"
   ],
@@ -83,7 +83,9 @@
     "webpack-hot-server": "^0.2.2"
   },
   "devDependencies": {
-    "xo": "^0.12.1"
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-config-xo": "^0.12.0"
   },
   "tooling": {
     "entry": "example",
@@ -91,13 +93,6 @@
       "title": "tooling index",
       "template": "lib/index.jade"
     }
-  },
-  "xo": {
-    "semicolon": false,
-    "ignores": [
-      "example/**",
-      "build/**"
-    ]
   },
   "testen": {
     "node": [

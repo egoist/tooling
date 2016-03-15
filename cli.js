@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 'use strict'
-
 const program = require('commander')
 const updateNotifier = require('update-notifier')
 const pkg = require('./package')
@@ -8,7 +7,7 @@ const watch = require('./commands/watch')
 const build = require('./commands/build')
 const init = require('./commands/init')
 
-updateNotifier({pkg}).notify()
+updateNotifier({ pkg }).notify()
 
 program.version(pkg.version)
 
