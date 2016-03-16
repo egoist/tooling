@@ -28,7 +28,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Vue/Vue-loader
 - [PostCSS/css-modules/cssnext](https://github.com/egoist/tooling/wiki/Using-CSS-via-PostCSS)
 - Autoprefixer
-- Hot reloading or Live reloading
+- [Hot reloading or Live reloading](https://github.com/egoist/tooling/wiki/Reloading-your-app)
 - BrowserSync
 - Custom HTML template
 - Build or Watch
