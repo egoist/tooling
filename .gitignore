@@ -2,3 +2,4 @@ node_modules
 /build
 /example/build
 .DS_Store
+/tooling.js

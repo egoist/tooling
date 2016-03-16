@@ -126,16 +126,11 @@ Sometimes settings in `package.json` is not powerful enough, you can extend the 
 /**
  * @param {Object} config - webpack config which merged cli options and settings in package.json
  * @param {Object} options - cli arguments
- * @return {Object} config - new webpack config
+ * @return {Object} config - new webpack config to assign
  */
 export default function (config, options) {
-	config.entry = './some/else/entry.js'
-	config.postcss.push(require('new postcss plugins'))
-	return config
-
-	// or if you like object spreading...
+	// this object will be deeply assigned into webpack config
 	return {
-		...config,
 		entry: 'something else'
 	}
 }
