@@ -118,7 +118,7 @@ $ gh-pages -d build
 
 If it's complex to configure via CLI arguments (like multi entry), feel free to set in `package.json`.
 
-## [Extend default config](https://github.com/egoist/tooling/wiki/Extending-Webpack-config)
+## [Extending Webpack config](https://github.com/egoist/tooling/wiki/Extending-Webpack-config)
 
 Sometimes settings in `package.json` is not powerful enough, you can extend the webpack.config.js that Tooling uses to build your app by simply dropping `tooling.js` in your project directory:
 
