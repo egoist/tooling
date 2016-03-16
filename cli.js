@@ -27,6 +27,7 @@ program
   .option('--cssnext', 'Use cssnext')
   .option('--cssmodules', 'Use css-modules')
   .option('-c, --config', 'Custom tooling config file')
+  .option('-l, --live', 'Live reloading server')
   .action(watch)
 
 program

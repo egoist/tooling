@@ -85,7 +85,8 @@
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.12.13",
     "webpack-hot-middleware": "^2.9.1",
-    "webpack-hot-server": "^0.2.2"
+    "webpack-hot-server": "^0.2.2",
+    "webpack-livereload-plugin": "^0.7.0"
   },
   "devDependencies": {
     "eslint": "^2.4.0",

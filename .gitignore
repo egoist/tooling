@@ -3,3 +3,4 @@ node_modules
 /example/build
 .DS_Store
 /tooling.js
+*.log

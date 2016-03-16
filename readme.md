@@ -28,7 +28,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Vue/Vue-loader
 - [PostCSS/css-modules/cssnext](https://github.com/egoist/tooling/wiki/Using-CSS-via-PostCSS)
 - Autoprefixer
-- Hot reloading
+- Hot reloading or Live reloading
 - BrowserSync
 - Custom HTML template
 - Build or Watch
@@ -54,7 +54,7 @@ $ npm install tooling -g
 $ mkdir -p awesome-web-app/src
 $ cd awesome-web-app
 $ npm init # if you don't have a package.json
-$ tooling init react # tooling init [type], default is vue
+$ tooling init react # tooling init [type], default is `base`
 ```
 
 **Start hacking**
