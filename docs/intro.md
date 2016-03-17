@@ -12,7 +12,7 @@ Tooling is a CLI tool to help you fast developing a JavaScript app.
 
 ## Solution
 
-**We selected Webpack!** Webpack is almost anything, so we take our first step there. Tooling uses Webpack under the hood by preseting configurations. And providing a simple interface for users to extend it.
+**We selected Webpack!** Webpack is almost anything, so we take our first step there. Tooling uses Webpack under the hood by presetting configurations. And providing a simple interface for users to extend it.
 
 ## Preset
 
