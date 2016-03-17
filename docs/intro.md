@@ -32,3 +32,4 @@ Tooling is a great for writing (bundling):
 - Compressed output, make your app fly higher.
 - Latest technologies, Babel/PostCSS is our choice by default.
 - Auto-install dependencies, say goodbye to the annoying `npm install xxx` when developing.
+- Full-featured testing solution, eslint and stylelint help you out!
