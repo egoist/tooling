@@ -18,9 +18,9 @@
     "node": ">=4.0.0"
   },
   "scripts": {
-    "test": "eslint **/*.js --quiet && cd example && npm install && ../cli.js build",
-    "build": "tooling build -e src/index -u vue",
-    "watch": "tooling watch -e src/index -u vue",
+    "test": "eslint **/*.js --quiet && cd example && npm install && ../cli.js build -u vue",
+    "build": "tooling build -u vue",
+    "watch": "tooling watch -u vue",
     "deploy": "npm run build && tooling gh"
   },
   "files": [

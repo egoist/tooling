@@ -7,12 +7,12 @@ const stripIndent = require('strip-indent')
 const pathExists = require('path-exists')
 
 module.exports = function init(type) {
-  const use = type || 'vue'
+  const use = type || 'base'
   try {
     // update npm scripts in package.json
     const data = pkg.data()
-    data.scripts.build = `tooling build -e src/index -u ${use}`
-    data.scripts.watch = `tooling watch -e src/index -u ${use}`
+    data.scripts.build = `tooling build -u ${use}`
+    data.scripts.watch = `tooling watch -u ${use}`
     data.scripts.deploy = 'npm run build && tooling gh'
     pkg.update(data)
     // initial a tooling.js
