@@ -29,7 +29,7 @@ module.exports = function init(type) {
          * @return {Object} config - new webpack config
          */
         export default function (config, options) {
-          return {}
+          config.entry = './path/to/entry'
         }
     `).trim()
     /* eslint-enable */

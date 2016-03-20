@@ -129,10 +129,8 @@ Sometimes settings in `package.json` is not powerful enough, you can extend the 
  * @return {Object} config - new webpack config to assign
  */
 export default function (config, options) {
-	// this object will be deeply assigned into webpack config
-	return {
-		entry: 'something else'
-	}
+	// directly modify param `config` is ok, trust me
+	config.entry = './path/to/entry'
 }
 ```
 
