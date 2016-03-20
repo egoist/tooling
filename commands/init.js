@@ -13,7 +13,7 @@ module.exports = function init(type) {
     const data = pkg.data()
     data.scripts.build = `tooling build -u ${use}`
     data.scripts.watch = `tooling watch -u ${use}`
-    data.scripts.deploy = 'npm run build && tooling gh'
+    data.scripts.deploy = 'npm run build && gh-pages -d build'
     pkg.update(data)
     // initial a tooling.js
     const toolingFile = cwd('tooling.js')
