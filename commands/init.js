@@ -11,7 +11,7 @@ module.exports = function init(type) {
   try {
     // update npm scripts in package.json
     const data = pkg.data()
-    data.scripts.build = `tooling build -u ${use}`
+    data.scripts.build = `tooling build -u ${use} --clean`
     data.scripts.watch = `tooling watch -u ${use}`
     data.scripts.deploy = 'npm run build && gh-pages -d build'
     pkg.update(data)
