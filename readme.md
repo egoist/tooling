@@ -144,12 +144,6 @@ For advanced usage: [Wiki](https://github.com/egoist/tooling/wiki)
 
 - (Chinese) [文章: tooling 让你从 jQuery 中解脱出来](https://egoistian.com/2016/01/19/tooling-free-you-from-jquery/)
 
-## Versioning
-
-Tooling now sticks at `0.x` and will soon have some major changes to reach `1.x`, until then, there will be no new release published. If you hate breaking changes, stick your local `tooling` version to `0.x` and done.
-
-However `1.x` will be a more complete solution for building and testing JavaScript apps.
-
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
