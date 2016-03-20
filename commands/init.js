@@ -29,7 +29,8 @@ module.exports = function init(type) {
          * @return {Object} config - new webpack config
          */
         export default function (config, options) {
-          config.entry = './path/to/entry'
+          // modify config can override everything defined via CLI and package.json
+          // config.entry = './path/to/entry'
         }
     `).trim()
     /* eslint-enable */
