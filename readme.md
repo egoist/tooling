@@ -27,6 +27,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - React with JSX
 - Vue/Vue-loader
 - [PostCSS/css-modules/cssnext](https://github.com/egoist/tooling/wiki/Using-CSS-via-PostCSS)
+- [SugarSS](https://github.com/egoist/tooling/wiki/Using-SugarSS)
 - Autoprefixer
 - [Hot reloading or Live reloading](https://github.com/egoist/tooling/wiki/Reloading-your-app)
 - BrowserSync

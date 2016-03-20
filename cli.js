@@ -28,6 +28,7 @@ program
   .option('--cssmodules', 'Use css-modules')
   .option('-c, --config', 'Custom tooling config file')
   .option('-l, --live', 'Live reloading server')
+  .option('--sugarss', 'Using SugarSS as PostCSS parser')
   .action(watch)
 
 program
@@ -47,6 +48,7 @@ program
   .option('--clean', 'Clean output path before bundle')
   .option('--cssmodules', 'Use css-modules')
   .option('-c, --config', 'Custom tooling config file')
+  .option('--sugarss', 'Using SugarSS as PostCSS parser')
   .action(build)
 
 program
