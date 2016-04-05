@@ -2,7 +2,7 @@
 
 ## Use `tooling` to prototype a Vue demo
 
-[Watch Video(no sound) on Youtube!](https://www.youtube.com/watch?v=_odq2Sc1Sko)
+[Watch Video(no sound) on Youtube!](https://www.youtube.com/watch?v=_odq2Sc1Sko) (Outdated, append `--use vue` to boostrap the vue demo!)
 
 ## Use `tooling` to prototype a React demo
 
