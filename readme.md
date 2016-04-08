@@ -127,7 +127,6 @@ Sometimes settings in `package.json` is not powerful enough, you can extend the 
 /**
  * @param {Object} config - webpack config which merged cli options and settings in package.json
  * @param {Object} options - cli arguments
- * @return undefined - you don't need to return anything
  */
 export default function (config, options) {
 	// directly modify param `config` is ok, trust me
