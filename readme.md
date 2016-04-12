@@ -41,7 +41,11 @@ Real world example, run `npm run dev` in [this repo](https://github.com/egoist/t
 
 ## Install
 
-Installing `tooling` via NPM is easy (**WARN: only work for Node.js >= 4 and NPM@3**):
+Prerequirements:
+
+- Node.js 4+
+- NPM 3+
+- Python 2.7+
 
 ```bash
 $ npm install tooling -g
