@@ -61,7 +61,6 @@
     "jade": "^1.11.0",
     "jade-loader": "^0.8.0",
     "json-loader": "^0.5.4",
-    "npm-install-webpack-plugin": "^2.0.0",
     "opn": "^4.0.1",
     "path-exists": "^2.1.0",
     "postcss-cssnext": "^2.4.0",
@@ -91,8 +90,7 @@
   },
   "devDependencies": {
     "eslint": "^2.4.0",
-    "eslint-config-airbnb": "^6.1.0",
-    "eslint-config-xo": "^0.12.0"
+    "eslint-config-airbnb": "^6.1.0"
   },
   "tooling": {
     "entry": "example",

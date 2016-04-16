@@ -48,6 +48,7 @@ Prerequirements:
 - Python 2.7+
 
 ```bash
+# this may take a while, hang on...
 $ npm install tooling -g
 ```
 
