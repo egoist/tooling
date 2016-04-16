@@ -19,7 +19,6 @@ program
   .option('--bs, --browser-sync [port]', 'Toggle browserSync')
   .option('-s, --silent', 'Do not open browser window')
   .option('-u, --use [usePresetsFor]', 'Use presets for React or Vue or the default config')
-  .option('--ai, --auto-install', 'Automatically install missing dependencies when editing')
   .option('--title [htmlTitle]', 'Set title for output html')
   .option('--umd <libraryName>', 'UMD format')
   .option('--cjs', 'CommonJS format')
