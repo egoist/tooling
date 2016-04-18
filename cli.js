@@ -28,6 +28,7 @@ program
   .option('-c, --config', 'Custom tooling config file')
   .option('-l, --live', 'Live reloading server')
   .option('--sugarss', 'Using SugarSS as PostCSS parser')
+  .option('--electron', 'Develop in electron mode, hot reloading support')
   .action(watch)
 
 program
@@ -48,6 +49,7 @@ program
   .option('--cssmodules', 'Use css-modules')
   .option('-c, --config', 'Custom tooling config file')
   .option('--sugarss', 'Using SugarSS as PostCSS parser')
+  .option('--electron', 'Build in electron mode')
   .action(build)
 
 program

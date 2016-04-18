@@ -36,6 +36,7 @@ What `tooling` supports (which means you don't have to install these dependencie
 - Long-term caching
 - [Custom format, iife/umd/commonjs](https://github.com/egoist/tooling/wiki/UMD-CommonJS)
 - [Extend the webpack config!](https://github.com/egoist/tooling#extend-default-config)
+- [Electron support!]((https://github.com/egoist/tooling/wiki/Electron)
 
 Real world example, run `npm run dev` in [this repo](https://github.com/egoist/tiktok) or [try it out](/try-it-out.md) 👉
 
