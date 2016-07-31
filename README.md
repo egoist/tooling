@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="https://cdn.rawgit.com/egoist/fa2efce43aa2f62e39bbc363bf2240b7/raw/c17a8a5bf5981c32d7b38bbf2dcd88866ef1c8b1/gear.svg" alt="">
   <br><strong>tooling</strong> is an ultra simple<br> build tool for JavaScript apps.
 </div>
 
