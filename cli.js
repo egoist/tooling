@@ -16,6 +16,7 @@ const cli = meow(`
     -w, --watch:       Watch mode, run in webpack watch mode
     -l, --live:        Live reloading
     -o, --open:        Open dev server in default browser
+    --react:           Use presets for React apps
     --no-html:         Do not generate html
     -v, --version:     Output version
     -h, --help:        Output help (You are here!)
