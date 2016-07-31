@@ -40,6 +40,35 @@ $ tooling -p
 $ tooling --help
 ```
 
+## Advanced configuration
+
+Create a `tooling.config.js` in your project root directory:
+
+```js
+/**
+ * Override CLI options
+ * @param  {Object} options - CLI options
+ * @return {Object}
+ */
+export default options => {
+  // override default options with ⬇️⬇️
+  return {
+    // all the simple options that are listed in CLI help message.
+    port, live, react, // ...
+
+    // other complex options, like Object, Array and Function
+    // babel options
+    babel,
+    // postcss plugins
+    postcss,
+    // autoprefixer browsers, only works when you didn't override postcss plugins
+    browsers
+  }
+}
+```
+
+**Protip**: You don't have to install modules that are already installed by **tooling**, like `webpack` and some `postcss/babel` plugins.
+
 ## License
 
 MIT © [EGOIST](https://github.com/egoist)
