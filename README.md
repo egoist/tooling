@@ -6,11 +6,11 @@
 
 ### Webpack
 
-Webpack 2 is the bundler **tooling** used under the hood.
+Webpack is the bundler **tooling** used under the hood. We will switch to Webpack 2 as soon as it's stable.
 
 ### Babel
 
-**tooling** transforms all js file by using Babel with `es2015-webpack` and `stage-1`, which means all ES6/7 and stage-1 features are supported.
+JS files are transformed by Babel with preset `es2015` and `stage-1`, which means all ES6/7 and stage-1 features are supported.
 
 ### HTML
 
