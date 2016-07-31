@@ -1,0 +1,54 @@
+{
+  "name": "tooling",
+  "version": "0.0.0",
+  "description": "Headless build tool for JavaScript apps.",
+  "license": "MIT",
+  "repository": "egoist/tooling",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "bin": "cli.js",
+  "scripts": {
+    "test": "xo"
+  },
+  "files": [
+    "cli.js",
+    "lib"
+  ],
+  "keywords": [
+    ""
+  ],
+  "devDependencies": {
+    "xo": "latest"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  },
+  "dependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015-webpack": "^6.4.2",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "json-loader": "^0.5.4",
+    "meow": "^3.7.0",
+    "opn": "^4.0.2",
+    "postcss-import": "^8.1.2",
+    "postcss-loader": "^0.9.1",
+    "postcss-nested": "^1.0.0",
+    "postcss-simple-vars": "^3.0.0",
+    "progress-bar-webpack-plugin": "^1.8.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-hot-server": "^0.5.1",
+    "webpack-livereload-plugin": "^0.8.1"
+  }
+}
