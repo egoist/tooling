@@ -40,6 +40,10 @@ $ tooling -p
 $ tooling --help
 ```
 
+## Recipes
+
+- [Create React App](/recipes/react-app.md)
+
 ## Advanced configuration
 
 Create a `tooling.config.js` in your project root directory:
