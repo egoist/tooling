@@ -3,7 +3,41 @@
   <br><strong>tooling</strong> is an ultra simple<br> build tool for JavaScript apps.
 </div>
 
-<h2></h2>
+## tl;dr
+
+```bash
+$ npm install -g tooling
+
+# initialize an empty project
+$ tooling init my-project
+# or a react project
+$ tooling init my-project --react
+```
+
+## Install
+
+```bash
+$ npm install -g tooling
+```
+
+## Usage
+
+```bash
+# live reloading
+$ tooling --live
+
+# build for production use
+$ tooling -p
+
+$ tooling --help
+$ tooling init --help
+```
+
+## Recipes
+
+- [Create React App](/recipes/react-app.md)
+
+## Features
 
 ### Webpack
 
@@ -19,30 +53,7 @@ By default **tooling** generates an `index.html` with `<div id="app"></div>` in 
 
 ### CSS
 
-CSS files are transformed by PostCSS, and `CSS modules` are enabled by default.
-
-## Install
-
-```bash
-$ npm install -g tooling
-```
-
-## Usage
-
-```bash
-# the default entry is index.js
-$ tooling # equal to
-$ tooling index.js
-
-# build for production use
-$ tooling -p
-
-$ tooling --help
-```
-
-## Recipes
-
-- [Create React App](/recipes/react-app.md)
+CSS files are transformed by PostCSS.
 
 ## Advanced configuration
 
@@ -58,7 +69,7 @@ export default options => {
   // override default options with ⬇️⬇️
   return {
     // all the simple options that are listed in CLI help message.
-    port, live, react, // ...
+    entry, port, live, react, // ...
 
     // other complex options, like Object, Array and Function
     // babel options

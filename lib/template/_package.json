@@ -1,0 +1,21 @@
+{
+  "name": "<$ projectName $>",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A superme tooling project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo lol",
+    "start": "tooling",
+    "build": "tooling -p"
+  },
+  "keywords": [
+    "tooling"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {<% if react %>
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0"
+  <% endif %>}
+}
