@@ -16,7 +16,7 @@ $ tooling init my-project --react
 
 ## Install
 
-Recommend: ` node>=4 ` `npm >= 3`
+Recommend: ` node >= 4 ` `npm >= 3`
 
 ```bash
 $ npm install -g tooling
