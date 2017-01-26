@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+process.env.NODE_ENV = 'development'
 const meow = require('meow')
 const chalk = require('chalk')
 const handleError = require('../lib/handle-error')
