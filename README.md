@@ -83,6 +83,7 @@ Check out the [docs](/docs/adapter.md) for adapter.
 ## List of adapters
 
 - [vue](https://github.com/egoist/tooling-vue)
+- [preact](https://github.com/egoist/tooling-preact)
 
 ## Contributing
 
