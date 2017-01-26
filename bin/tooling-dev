@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const meow = require('meow')
 const chalk = require('chalk')
-const log = require('../lib/log')
+const handleError = require('../lib/handle-error')
 
 const cli = meow({
   description: false,
@@ -28,6 +28,5 @@ const options = Object.assign({
 try {
   require('../lib')(options)
 } catch (err) {
-  log.error(chalk.red(err.message))
-  process.exit(1)
+  handleError(err)
 }

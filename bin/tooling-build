@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const meow = require('meow')
 const chalk = require('chalk')
-const log = require('../lib/log')
+const handleError = require('../lib/handle-error')
 
 const cli = meow({
   description: false,
@@ -27,11 +27,4 @@ try {
   require('../lib')(options).catch(handleError)
 } catch (err) {
   handleError(err)
-}
-
-function handleError(err) {
-  console.log(chalk.red(err.message.trim()))
-  console.log()
-  log.error('Compiling failed!')
-  process.exit(1)
 }
