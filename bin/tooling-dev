@@ -10,13 +10,19 @@ const cli = meow({
 
   ${chalk.bold('Options:')}
 
-    ${chalk.yellow('--port [port]')}       ${chalk.dim('Server port')}
-    ${chalk.yellow('--dist [folder]')}     ${chalk.dim('Directory for output files')}
-    ${chalk.yellow('--proxy [url]')}       ${chalk.dim('Proxy API request')}
+    ${chalk.yellow('-c, --config [path]')}    ${chalk.dim('Load config file')}
+    ${chalk.yellow('-a, --adapter [path]')}   ${chalk.dim('Load adapter')}
+    ${chalk.yellow('-p, --port [port]')}      ${chalk.dim('Server port')}
+    ${chalk.yellow('-d, --dist [folder]')}    ${chalk.dim('Directory for output files')}
+    ${chalk.yellow('--proxy [url]')}          ${chalk.dim('Proxy API request')}
 \t`
 }, {
   alias: {
-    h: 'help'
+    h: 'help',
+    c: 'config',
+    a: 'adapter',
+    p: 'port',
+    d: 'dist'
   }
 })
 

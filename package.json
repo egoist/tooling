@@ -56,6 +56,7 @@
     "installed-by-yarn-globally": "^0.1.2",
     "meow": "^3.7.0",
     "minimist": "^1.2.0",
+    "object-picker": "^0.2.0",
     "post-compile-webpack-plugin": "^0.1.1",
     "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",

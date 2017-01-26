@@ -3767,6 +3767,10 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
+object-picker@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/object-picker/-/object-picker-0.2.0.tgz#2d1610e90025bef0a15ed75e9985918201fd306e"
+
 object.omit@^2.0.0:
   version "2.0.1"
   resolved "https://registry.npmjs.org/object.omit/-/object.omit-2.0.1.tgz#1a9c744829f39dbb858c76ca3579ae2a54ebd1fa"
