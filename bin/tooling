@@ -1,0 +1,72 @@
+#!/usr/bin/env node
+const path = require('path')
+const spawn = require('cross-spawn')
+const minimist = require('minimist')
+const chalk = require('chalk')
+const pkg = require('../package')
+
+const help = `
+  ${pkg.description}
+
+  ${chalk.bold('Commands:')}
+
+    ${chalk.yellow('dev')} <entry>       ${chalk.dim('Development mode')}
+    ${chalk.yellow('build')} <entry>     ${chalk.dim('Production mode')}
+
+  ${chalk.bold('Options:')}
+
+    ${chalk.yellow('-h, --help')}        ${chalk.dim('Output help')}
+    ${chalk.yellow('-v, --version')}     ${chalk.dim('Output version')}
+
+  ${chalk.dim(`To view help for specific command, run \`tooling <command> -h\``)}
+`
+
+const cli = minimist(process.argv.slice(2), {
+  alias: {
+    h: 'help',
+    v: 'version'
+  }
+})
+
+const cmd = cli._[0]
+const commands = new Set([
+  'build',
+  'start',
+  'dev'
+])
+
+if (!commands.has(cmd)) {
+  console.log(help)
+  process.exit()
+}
+
+if (cli.version) {
+  console.log(pkg.version)
+  process.exit()
+}
+
+const bin = path.join(__dirname, 'tooling-' + cmd)
+
+const startProcess = () => {
+  const proc = spawn(bin, process.argv.slice(3), { stdio: 'inherit', customFds: [0, 1, 2] })
+  proc.on('close', (code, signal) => {
+    if (code !== null) {
+      process.exit(code)
+    }
+    if (signal) {
+      if (signal === 'SIGKILL') {
+        process.exit(137)
+      }
+      console.log(`got signal ${signal}, exitting`)
+      process.exit(1)
+    }
+    process.exit(0)
+  })
+  proc.on('error', err => {
+    console.error(err)
+    process.exit(1)
+  })
+  return proc
+}
+
+startProcess()

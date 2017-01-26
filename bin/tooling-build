@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+const meow = require('meow')
+const chalk = require('chalk')
+const log = require('../lib/log')
+
+const cli = meow({
+  description: false,
+  help: `
+  Run tooling in production mode
+
+  ${chalk.bold('Options:')}
+
+    ${chalk.yellow('--dist')}       ${chalk.dim('Directory for output files')}
+\t`
+}, {
+  h: 'help'
+})
+
+const options = Object.assign({
+  entry: cli.input[0],
+  mode: 'build'
+}, cli.flags)
+
+try {
+  require('../lib')(options).catch(handleError)
+} catch (err) {
+  handleError(err)
+}
+
+function handleError(err) {
+  console.log(chalk.red(err.message.trim()))
+  console.log()
+  log.error('Compiling failed!')
+  process.exit(1)
+}
