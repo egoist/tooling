@@ -107,3 +107,7 @@ Set `--adapter` here.
 Default: `false`
 
 Use CSS modules.
+
+### compress
+
+Default: `true` in production mode
