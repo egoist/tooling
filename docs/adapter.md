@@ -44,12 +44,7 @@ module.exports = {
 }
 ```
 
-The full `webpack` function arguments:
-
-- `cfg`: current webpack config
-- `options`: CLI options with some default values
-  - `mode`: CLI command, for `tooling dev` the mode is `dev`
-- `webpack`: The webpack module
+Check out the [definition](./config.md#webpack) of `webpack` function.
 
 ## Prevent the default behaivor
 
