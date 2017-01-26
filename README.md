@@ -41,6 +41,17 @@ yarn tooling build index.js
 
 Then you can deploy generated files in `./dist` folder.
 
+**Build in library mode:**
+
+Similar to production mode, but it generates a UMD format bundle:
+
+```bash
+yarn tooling build index.js --lib LibraryName
+# then window.LibraryName will also be available
+```
+
+You may [exclude some modules](/docs/config.md#externals) from your library.
+
 ## What's inside?
 
 ### Babel

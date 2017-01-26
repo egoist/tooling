@@ -78,3 +78,8 @@ Default:
   ]
 }
 ```
+
+
+### externals
+
+Same as webpack's [externals](https://webpack.js.org/configuration/externals/) options.
