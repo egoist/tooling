@@ -76,7 +76,7 @@ You can keep CLI options here, check out the [docs](/docs/config.md).
 
 ## Adapter
 
-An adapter can mutate the webpack config tooling uses, it's often used to adapt specific framework like `react` and `vue`.
+An adapter can mutate the webpack config tooling uses, it can use all options in config file and is often used to adapt specific framework like `react` and `vue`.
 
 Check out the [docs](/docs/adapter.md) for adapter.
 

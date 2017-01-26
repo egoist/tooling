@@ -1,5 +1,7 @@
 # Adapter
 
+Adapter can use all options in [config file](./config.md).
+
 ## Run an adapter
 
 ```bash
