@@ -6,16 +6,26 @@ const tooling = require('../')
 describe('build', () => {
   let files
   let proc
+  let cwd = process.cwd()
+
+  const cli = path.join(__dirname, '../bin/tooling')
+
+  function setup() {
+    process.chdir('__test__/fixture')
+  }
+
+  function teardown() {
+    spawn.sync('rm', ['-rf', 'dist'])
+    process.chdir(cwd)
+  }
 
   beforeAll(() => {
-    const cli = path.join(__dirname, '../bin/tooling')
+    setup()
     proc = spawn.sync(cli, ['build', 'index.js'])
     files = fs.readdirSync('dist')
   })
 
-  afterAll(() => {
-    spawn.sync('rm', ['-rf', 'dist'])
-  })
+  afterAll(teardown)
 
   it('set correct status code', () => {
     expect(proc.status).toBe(0)
