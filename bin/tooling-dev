@@ -10,11 +10,14 @@ const cli = meow({
 
   ${chalk.bold('Options:')}
 
-    ${chalk.yellow('--port')}       ${chalk.dim('Server port')}
-    ${chalk.yellow('--dist')}       ${chalk.dim('Directory for output files')}
+    ${chalk.yellow('--port [port]')}       ${chalk.dim('Server port')}
+    ${chalk.yellow('--dist [folder]')}     ${chalk.dim('Directory for output files')}
+    ${chalk.yellow('--proxy [url]')}       ${chalk.dim('Proxy API request')}
 \t`
 }, {
-  h: 'help'
+  alias: {
+    h: 'help'
+  }
 })
 
 const options = Object.assign({

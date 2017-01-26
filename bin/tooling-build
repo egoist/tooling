@@ -10,10 +10,12 @@ const cli = meow({
 
   ${chalk.bold('Options:')}
 
-    ${chalk.yellow('--dist')}       ${chalk.dim('Directory for output files')}
+    ${chalk.yellow('--dist [folder]')}       ${chalk.dim('Directory for output files')}
 \t`
 }, {
-  h: 'help'
+  alias: {
+    h: 'help'
+  }
 })
 
 const options = Object.assign({
