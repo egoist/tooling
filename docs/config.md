@@ -7,7 +7,7 @@ An example `config.js`:
 ```js
 module.exports = {
   port: 3000,
-  webpack(cfg, options, webpack) {
+  webpack(cfg, webpack) {
     // update cfg
     return cfg
   }
@@ -20,7 +20,9 @@ Then load it:
 yarn tooling build index.js --config config.js
 ```
 
-## Options
+## Config
+
+To access the `options` you can use a function which returns the config, and the first argument of the function is `options`.
 
 ### port
 
@@ -34,8 +36,6 @@ Type: `function`
 The full `webpack` function arguments:
 
 - `cfg`: current webpack config
-- `options`: CLI options with some default values
-  - `mode`: CLI command, for `tooling dev` the mode is `dev`
 - `webpack`: The webpack module
 
 ### autoprefixer

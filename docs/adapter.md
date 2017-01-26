@@ -19,8 +19,8 @@ Learn by example:
 
 ```js
 // adapater for supporting vue single file component
-module.exports = {
-  webpack(cfg, options) {
+module.exports = options => ({
+  webpack(cfg) {
     let loaders
 
     // extract css in single file component for production build
@@ -43,7 +43,7 @@ module.exports = {
 
     return cfg
   }
-}
+})
 ```
 
 Check out the [definition](./config.md#webpack) of `webpack` function.
