@@ -5229,7 +5229,7 @@ unzip-response@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/unzip-response/-/unzip-response-1.0.2.tgz#b984f0877fc0a89c2c773cc1ef7b5b232b5b06fe"
 
-update-notifier@^1.0.0:
+update-notifier@^1.0.0, update-notifier@^1.0.3:
   version "1.0.3"
   resolved "https://registry.npmjs.org/update-notifier/-/update-notifier-1.0.3.tgz#8f92c515482bd6831b7c93013e70f87552c7cf5a"
   dependencies:

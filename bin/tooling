@@ -3,7 +3,10 @@ const path = require('path')
 const spawn = require('cross-spawn')
 const minimist = require('minimist')
 const chalk = require('chalk')
+const update = require('update-notifier')
 const pkg = require('../package')
+
+update({pkg}).notify()
 
 const help = `
   ${pkg.description}
