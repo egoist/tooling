@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./media/logo.svg" alt="">
+  <img src="https://rawgit.com/egoist/tooling/master/media/logo.svg" alt="">
   <br><strong>tooling</strong> is a universal <br>CLI for any front-end framework.
 </p>
 <br>
