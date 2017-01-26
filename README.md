@@ -80,6 +80,10 @@ An adapter can mutate the webpack config tooling uses, it's often used to adapt 
 
 Check out the [docs](/docs/adapter.md) for adapter.
 
+## List of adapters
+
+- [vue](https://github.com/egoist/tooling-vue)
+
 ## Contributing
 
 1. Fork it!
