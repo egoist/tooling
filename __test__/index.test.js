@@ -32,6 +32,6 @@ describe('build', () => {
   })
 
   it('generate correct files', () => {
-    expect(files.length).toBe(2)
+    expect(files.length).toBe(3)
   })
 })
