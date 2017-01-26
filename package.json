@@ -59,6 +59,7 @@
     "object-picker": "^0.2.0",
     "post-compile-webpack-plugin": "^0.1.1",
     "postcss-loader": "^1.2.2",
+    "rimraf": "^2.5.4",
     "style-loader": "^0.13.1",
     "update-notifier": "^1.0.3",
     "webpack": "^2.2.0",
