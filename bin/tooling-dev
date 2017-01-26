@@ -16,6 +16,7 @@ const cli = meow({
     ${chalk.yellow('-p, --port [port]')}      ${chalk.dim('Server port')}
     ${chalk.yellow('-d, --dist [folder]')}    ${chalk.dim('Directory for output files')}
     ${chalk.yellow('--proxy [url]')}          ${chalk.dim('Proxy API request')}
+    ${chalk.yellow('--css-modules')}          ${chalk.dim('Import CSS with CSS modules')}
 \t`
 }, {
   alias: {

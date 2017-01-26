@@ -15,6 +15,7 @@ const cli = meow({
     ${chalk.yellow('-a, --adapter [path]')}      ${chalk.dim('Load adapter')}
     ${chalk.yellow('-d, --dist [folder]')}       ${chalk.dim('Directory for output files')}
     ${chalk.yellow('-l, --lib [libraryName]')}   ${chalk.dim('Distribute component in UMD format')}
+    ${chalk.yellow('--css-modules')}             ${chalk.dim('Import CSS with CSS modules')}
 \t`
 }, {
   alias: {

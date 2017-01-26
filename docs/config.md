@@ -82,8 +82,18 @@ Default:
 
 ### externals
 
+Default: `[]`
+
 Same as webpack's [externals](https://webpack.js.org/configuration/externals/) options.
 
 ### adapter
 
+Default: `undefined`
+
 Set `--adapter` here.
+
+### cssModules
+
+Default: `false`
+
+Use CSS modules.
