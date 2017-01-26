@@ -1,6 +1,9 @@
-# tooling
-
-[![NPM version](https://img.shields.io/npm/v/tooling.svg?style=flat)](https://npmjs.com/package/tooling) [![NPM downloads](https://img.shields.io/npm/dm/tooling.svg?style=flat)](https://npmjs.com/package/tooling) [![Build Status](https://img.shields.io/circleci/project/egoist/tooling/master.svg?style=flat)](https://circleci.com/gh/egoist/tooling) [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
+<p align="center">
+  <img src="./media/logo.svg" alt="">
+  <br><strong>tooling</strong> is a universal <br>CLI for any front-end framework.
+</p>
+<br>
+<p align="center"><a href="https://npmjs.com/package/tooling"><img src="https://img.shields.io/npm/v/tooling.svg?style=flat" alt="NPM version"></a> <a href="https://npmjs.com/package/tooling"><img src="https://img.shields.io/npm/dm/tooling.svg?style=flat" alt="NPM downloads"></a> <a href="https://circleci.com/gh/egoist/tooling"><img src="https://img.shields.io/circleci/project/egoist/tooling/master.svg?style=flat" alt="Build Status"></a> <a href="https://github.com/egoist/donate"><img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat" alt="donate"></a></p>
 
 ## Install
 
