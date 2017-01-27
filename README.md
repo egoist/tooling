@@ -64,7 +64,7 @@ The Default postcss plugins only contain the `autoprefixer` with `browsers: ['ie
 
 ### Static folder
 
-By default `./static` will be copied to `./dist`, thus all resource in the `./static` folder can be accessible via `http://localhost:4000/static`.
+By default `./static/*` will be copied to `./dist/*`, thus all resource in the `./static` folder can be accessible via `http://localhost:4000/*`.
 
 ### Homepage
 
