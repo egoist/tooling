@@ -111,3 +111,16 @@ Use CSS modules.
 ### compress
 
 Default: `true` in production mode
+
+
+### html
+
+#### title
+
+Default: `Tooling App`
+
+HTML title
+
+#### template
+
+If `template` is not set and `./template.html` exists, we use that, otherwise it fallback to [default template](/lib/template.html).
