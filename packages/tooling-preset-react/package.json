@@ -1,6 +1,6 @@
 {
   "name": "tooling-preset-react",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "React preset for Tooling.",
   "repository": {
     "url": "egoist/tooling-preset-react",
