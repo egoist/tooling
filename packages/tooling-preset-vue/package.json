@@ -1,6 +1,6 @@
 {
   "name": "tooling-preset-vue",
-  "version": "0.0.0",
+  "version": "2.0.0-beta.1",
   "description": "Vue preset for Tooling.",
   "repository": {
     "url": "egoist/tooling-preset-vue",

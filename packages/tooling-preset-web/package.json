@@ -1,6 +1,6 @@
 {
   "name": "tooling-preset-web",
-  "version": "0.0.0",
+  "version": "2.0.0-beta.1",
   "description": "Preset for building web app.",
   "main": "index.js",
   "files": [
