@@ -1,9 +1,9 @@
+/* eslint-disable import/no-dynamic-require */
+
 const chalk = require('chalk')
 const config = require('conpack')
 const PostCompilePlugin = require('post-compile-webpack-plugin')
 const _ = require('./utils')
-
-const presetOptions = {}
 
 function loadPresets(presets, type) {
   for (const [name, presetOptions = {}] of presets) {
@@ -28,8 +28,7 @@ module.exports = function (options) {
       .use(PostCompilePlugin, stats => {
         process.stdout.write('\x1Bc')
         if (stats.hasErrors() && options.type === 'build') {
-          console.log(stats.toString('errors-only'))
-          process.exit(1)
+          throw new Error(stats.toString('errors-only'))
         }
         console.log(stats.toString({
           children: false,

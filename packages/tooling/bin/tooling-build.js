@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/no-process-exit */
+
 const webpack = require('webpack')
 const getConfig = require('../lib')
 

@@ -1,3 +1,5 @@
+/* eslint-disable unicorn/no-process-exit */
+
 const chalk = require('chalk')
 const webpack = require('webpack')
 const getConfig = require('../lib')

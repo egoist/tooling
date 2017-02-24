@@ -7,6 +7,9 @@
     "index.js",
     "dev-client.es6"
   ],
+  "scripts": {
+    "test": "echo lol"
+  },
   "repository": "egoist/tooling",
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",

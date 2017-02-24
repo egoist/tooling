@@ -32,7 +32,6 @@ loadConfig('tooling').load(process.cwd())
     port: 4000
   }, config, flags)
 
-
   if (typeof options.presets === 'string') {
     options.presets = [options.presets]
   }
