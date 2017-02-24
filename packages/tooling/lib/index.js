@@ -5,14 +5,6 @@ const config = require('conpack')
 const PostCompilePlugin = require('post-compile-webpack-plugin')
 const _ = require('./utils')
 
-function loadPresets(presets, type) {
-  for (const [name, presetOptions = {}] of presets) {
-    console.log(chalk.bold(`> Using preset \`${name}\``))
-
-    require(_.cwd('node_modules', `tooling-preset-${name}`))({config, type, options: presetOptions})
-  }
-}
-
 module.exports = function (options) {
   const presets = (options.presets || []).map(preset => {
     if (!Array.isArray(preset)) {
@@ -21,7 +13,10 @@ module.exports = function (options) {
     return preset
   })
 
-  loadPresets(presets, options.type)
+  for (const [name, presetOptions] of presets) {
+    loadPreset(name, presetOptions)
+    console.log(chalk.bold(`> Using preset \`${name}\``))
+  }
 
   config
     .plugin('tooling-PostCompile')
@@ -44,4 +39,15 @@ module.exports = function (options) {
   console.log()
 
   return config.toConfig()
+
+  function loadPreset(name, presetOptions) {
+    const context = {
+      config,
+      type: options.type,
+      options: presetOptions,
+      inherit: loadPreset
+    }
+
+    require(_.cwd('node_modules', `tooling-preset-${name}`))(context)
+  }
 }

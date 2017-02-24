@@ -1,0 +1,38 @@
+{
+  "name": "tooling-preset-vue",
+  "version": "0.0.0",
+  "description": "Vue preset for Tooling.",
+  "repository": {
+    "url": "egoist/tooling-preset-vue",
+    "type": "git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "jest && npm run lint",
+    "lint": "xo"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "jest-cli": "^18.1.0",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": false,
+    "envs": [
+      "jest"
+    ]
+  },
+  "dependencies": {
+    "vue": "latest",
+    "vue-loader": "^11.1.2",
+    "vue-template-compiler": "^2.1.10"
+  }
+}

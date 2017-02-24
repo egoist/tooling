@@ -1,4 +1,5 @@
 /* eslint-disable unicorn/no-process-exit */
+process.env.NODE_ENV = 'development'
 
 const chalk = require('chalk')
 const webpack = require('webpack')

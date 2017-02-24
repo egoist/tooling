@@ -1,4 +1,5 @@
 /* eslint-disable unicorn/no-process-exit */
+process.env.NODE_ENV = 'production'
 
 const webpack = require('webpack')
 const getConfig = require('../lib')

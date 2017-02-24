@@ -5,7 +5,8 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "dev-client.es6"
+    "dev-client.es6",
+    "template.html"
   ],
   "scripts": {
     "test": "echo lol"

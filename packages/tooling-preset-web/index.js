@@ -12,7 +12,8 @@ module.exports = function ({type, config, options}) {
     entry: 'index.js',
     dist: 'dist',
     html: {
-      title: 'Tooling Preset Web: Homepage'
+      title: 'Tooling: Homepage',
+      template: path.join(__dirname, 'template.html')
     },
     sourceMap: isBuild,
     minimize: isBuild,
@@ -52,6 +53,7 @@ module.exports = function ({type, config, options}) {
     .resolve
       .extensions
         .add('.js')
+        .add('.jsx')
         .add('.css')
         .add('.json')
         .end()
@@ -69,7 +71,7 @@ module.exports = function ({type, config, options}) {
       .end()
     .module
       .rule('web-js')
-        .test(/\.js$/)
+        .test(/\.jsx?$/)
         .exclude([/node_modules/])
         .loader('babel', 'babel-loader')
         .end()
@@ -91,6 +93,15 @@ module.exports = function ({type, config, options}) {
         options: {
           context: process.cwd(),
           babel: BABEL_OPTIONS
+        }
+      })
+      .end()
+    .plugin('web-define')
+      .use(webpack.DefinePlugin, {
+        process: {
+          env: {
+            NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+          }
         }
       })
 
@@ -139,7 +150,7 @@ module.exports = function ({type, config, options}) {
   } else {
     config
       .entry('web-client')
-        .add(path.join(__dirname, './dev-client.es6'))
+        .prepend(path.join(__dirname, './dev-client.es6'))
         .end()
       .plugin('web-hmr')
         .use(webpack.HotModuleReplacementPlugin)
@@ -164,7 +175,7 @@ module.exports = function ({type, config, options}) {
         })
         config
           .module
-            .rule(`web-${lang}-extract`)
+            .rule(`web-compile-${lang}`)
               .test(new RegExp(`\\.${lang}$`))
               .loader('extract', extractPlugin[0].loader, extractPlugin[0].options)
               .loader('style', 'style-loader')
@@ -178,7 +189,7 @@ module.exports = function ({type, config, options}) {
       } else {
         config
           .module
-            .rule(`web-${lang}`)
+            .rule(`web-compile-${lang}`)
               .test(new RegExp(`\\.${lang}$`))
               .loader('style', 'style-loader')
               .loader('css', 'css-loader')
