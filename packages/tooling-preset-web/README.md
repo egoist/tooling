@@ -7,8 +7,9 @@ What this preset does:
 - CSS preprocessors (Postcss/Sass/Scss/Less/Stylus)
 - CSS extraction
 - Babel with `babel-preset-latest`
-- Minimize and optimize in `tooling build`
-- Hot reloading (Live loading fallbacks) in `tooling dev`
+- Hot reloading (Live loading fallbacks) in `dev` command
+- Minimize and optimize in `build` command
+- Auto-split vendor code and app code in `build` command
 
 ## Install
 
@@ -61,14 +62,14 @@ Dist folder.
 ### extract
 
 Type: `boolean`<br>
-Default: `true` in `tooling build`
+Default: `true` in `build` command
 
 Extract CSS.
 
 ### sourceMap
 
 Type: `boolean`<br>
-Default: `true` in `tooling build`
+Default: `true` in `build` command
 
 Generate sourcemaps.
 
@@ -82,3 +83,10 @@ the default value is:
   title: 'Tooling Preset Web: Homepage'
 }
 ```
+
+### vendor
+
+Type: `boolean`<br>
+Default: `true` in `build` command and only work in `build` command
+
+Split vendor code and app code.

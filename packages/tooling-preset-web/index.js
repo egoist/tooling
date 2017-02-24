@@ -17,7 +17,8 @@ module.exports = function ({type, config, options}) {
     sourceMap: isBuild,
     minimize: isBuild,
     extract: isBuild,
-    hash: isBuild
+    hash: isBuild,
+    vendor: isBuild
   }, options)
 
   const filename = {
@@ -118,6 +119,23 @@ module.exports = function ({type, config, options}) {
           }
           /* eslint-enable camelcase */
         })
+
+    if (options.vendor) {
+      config
+        .plugin(webpack.optimize.CommonsChunkPlugin)
+          .use({
+            name: 'vendor',
+            minChunks: module => {
+              return module.resource && /\.(js|css|es6)$/.test(module.resource) && module.resource.indexOf('node_modules') !== -1
+            }
+          })
+          .end()
+        .plugin(webpack.optimize.CommonsChunkPlugin)
+          .use({
+            name: 'manifest'
+          })
+          .end()
+    }
   } else {
     config
       .entry('web-client')
