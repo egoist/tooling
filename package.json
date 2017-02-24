@@ -5,7 +5,8 @@
   "author": "egoist <0x142857@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "boot": "node scripts/bootstrap.js"
+    "test": "lerna exec -- npm test",
+    "test:ci": "lerna run test"
   },
   "devDependencies": {
     "promise.series": "^0.1.0",
