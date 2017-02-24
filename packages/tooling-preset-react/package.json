@@ -34,6 +34,6 @@
     "babel-preset-react-app": "^2.1.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "react-hot-loader": "next"
+    "react-hot-loader": "^3.0.0-beta.6"
   }
 }

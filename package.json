@@ -19,9 +19,9 @@
   "tooling": {
     "presets": [
       [
-        "vue",
+        "react",
         {
-          "entry": "example/vue/index.js"
+          "entry": "example/react/index.js"
         }
       ]
     ]

@@ -6,8 +6,7 @@ module.exports = function ({config, type, inherit, options}) {
   if (type === 'dev') {
     config
       .entry('web-client')
-        .prepend(require.resolve('react-hot-loader/patch'))
-        .end()
+        .prepend('react-hot-loader/patch')
   }
 
   config
