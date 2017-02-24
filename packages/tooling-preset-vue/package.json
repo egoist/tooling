@@ -33,6 +33,7 @@
   "dependencies": {
     "vue": "latest",
     "vue-loader": "^11.1.2",
-    "vue-template-compiler": "^2.1.10"
+    "vue-template-compiler": "^2.1.10",
+    "tooling-preset-web": "*"
   }
 }

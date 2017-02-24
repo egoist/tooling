@@ -23,14 +23,17 @@ loadConfig('tooling').load(process.cwd())
   const filepath = result ? result.filepath : null
   const config = result ? result.config : {}
 
-  if (filepath) {
-    console.log(chalk.bold(`> Using config from ${result.filepath}`))
-  }
-
   let options = Object.assign({
     type: cmd,
     port: 4000
   }, config, flags)
+
+  if (filepath) {
+    console.log(chalk.bold(`> Using config from ${result.filepath}`))
+  } else if (!options.presets) {
+    console.error(chalk.red('> You should either use config file or set presets via command line, both are not found!'))
+    process.exit(1)
+  }
 
   if (typeof options.presets === 'string') {
     options.presets = [options.presets]
