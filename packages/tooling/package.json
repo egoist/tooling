@@ -8,7 +8,8 @@
   },
   "bin": "bin/tooling.js",
   "files": [
-    "lib"
+    "lib",
+    "bin"
   ],
   "engines": {
     "node": ">=6"
