@@ -71,3 +71,14 @@ Type: `boolean`<br>
 Default: `true` in `tooling build`
 
 Generate sourcemaps.
+
+### html
+
+[html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) options,
+the default value is:
+
+```js
+{
+  title: 'Tooling Preset Web: Homepage'
+}
+```

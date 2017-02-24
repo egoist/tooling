@@ -1,6 +1,5 @@
 const chalk = require('chalk')
 const config = require('conpack')
-const Event = require('events')
 const PostCompilePlugin = require('post-compile-webpack-plugin')
 
 const presetOptions = {}

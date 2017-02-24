@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "description": "Preset for building web app.",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "dev-client.es6"
+  ],
   "repository": "egoist/tooling",
   "author": "EGOIST <0x142857@gmail.com>",
   "license": "MIT",

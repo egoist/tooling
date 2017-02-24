@@ -70,8 +70,9 @@ function showHelp() {
 
   ${chalk.bold('Options:')}
 
-    ${chalk.yellow('--port [port]')}        ${chalk.dim('Use specific port for dev server')}
-    ${chalk.yellow('-h, --help')}            ${chalk.dim('Show help')}
+    ${chalk.yellow('--port <port>')}        ${chalk.dim('Use specific port for dev server')}
+    ${chalk.yellow('--proxy <url>')}        ${chalk.dim('Proxy API requests to /api')}
+    ${chalk.yellow('-h, --help')}           ${chalk.dim('Show help')}
     ${chalk.yellow('-v, --version')}        ${chalk.dim('Show version number')}
     `)
   } else {
