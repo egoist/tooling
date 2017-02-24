@@ -49,7 +49,10 @@ loadConfig('tooling').load(process.cwd())
   } else if (cmd === 'build') {
     require('./tooling-build')(options)
   }
-}).catch(console.error)
+}).catch(err => {
+  console.error(chalk.red(err.stack))
+  process.exit(1)
+})
 
 function showHelp() {
   if (cmd === 'build') {

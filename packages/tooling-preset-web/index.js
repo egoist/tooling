@@ -78,13 +78,13 @@ module.exports = function ({type, config, options}) {
         .loader('babel', 'babel-loader')
         .end()
       .end()
-    .plugin('web-NoEmitOnErrors')
+    .plugin('web-no-emit-on-errors')
       .use(NoEmitOnErrorsPlugin)
       .end()
     .plugin('web-Html')
       .use(HtmlWebpackPlugin, options.html)
       .end()
-    .plugin('web-LoaderOptions')
+    .plugin('web-loader-options')
       .use(webpack.LoaderOptionsPlugin, {
         minimize: options.minimize,
         sourceMap: options.sourceMap,
@@ -98,7 +98,7 @@ module.exports = function ({type, config, options}) {
 
   if (isBuild) {
     config
-      .plugin('web-Uglify')
+      .plugin('web-uglify')
         .use(webpack.optimize.UglifyJsPlugin, {
           /* eslint-disable camelcase */
           sourceMap: Boolean(options.sourceMap),
@@ -122,16 +122,16 @@ module.exports = function ({type, config, options}) {
 
     if (options.vendor) {
       config
-        .plugin(webpack.optimize.CommonsChunkPlugin)
-          .use({
+        .plugin('web-commons-chunk-vendor')
+          .use(webpack.optimize.CommonsChunkPlugin, {
             name: 'vendor',
             minChunks: module => {
               return module.resource && /\.(js|css|es6)$/.test(module.resource) && module.resource.indexOf('node_modules') !== -1
             }
           })
           .end()
-        .plugin(webpack.optimize.CommonsChunkPlugin)
-          .use({
+        .plugin('web-commons-chunk-manifest')
+          .use(webpack.optimize.CommonsChunkPlugin, {
             name: 'manifest'
           })
           .end()

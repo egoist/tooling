@@ -1,6 +1,7 @@
 const chalk = require('chalk')
 const config = require('conpack')
 const PostCompilePlugin = require('post-compile-webpack-plugin')
+const _ = require('./utils')
 
 const presetOptions = {}
 
@@ -8,7 +9,7 @@ function loadPresets(presets, type) {
   for (const [name, presetOptions = {}] of presets) {
     console.log(chalk.bold(`> Using preset \`${name}\``))
 
-    require(`tooling-preset-${name}`)({config, type, options: presetOptions})
+    require(_.cwd('node_modules', `tooling-preset-${name}`))({config, type, options: presetOptions})
   }
 }
 
