@@ -36,14 +36,14 @@ And run `yarn dev` and go to `http://localhost:4000`.
 
 ## Command
 
-- `tooling dev`: Run dev server with hot reloading support, then you can code and open browser to preview
+- `tooling dev`: Run dev server with hot reloading support, then you can code as per required and open up browser to preview changes.
 - `tooling build`: Build app in production mode.
 
 ## Configuration
 
-The surpise is, tooling requires **no configurations!** Oh well, there're a couple CLI options. You can run `tooling --help` and `tooling <command> --help` to check out!
+The surprise is, tooling requires **no configurations!** Oh well, there're a couple CLI options. You can run `tooling --help` and `tooling <command> --help` to check out!
 
-However, `presets` may require options, then you can configure them in:
+However, `presets` may require options, so you can configure them in:
 
 - a package.json's `tooling` property
 - a JSON or YAML "rc file", eg: `.toolingrc.json` or `.toolingrc.yml` or without extension
@@ -70,6 +70,6 @@ Your app is driven by presets under the hood, just like [babel](https://babeljs.
 ## Author
 
 **tooling** © [egoist](https://github.com/egoist), Released under the [MIT](./LICENSE) License.<br>
-Authored and maintained by egoist with help from contributors ([list](https://github.com/egoist/tooling/contributors)).
+Authored and maintained by egoist with help of contributors ([list](https://github.com/egoist/tooling/contributors)).
 
 > [egoistian.com](https://egoistian.com) · GitHub [@egoist](https://github.com/egoist) · Twitter [@rem_rin_rin](https://twitter.com/rem_rin_rin)
